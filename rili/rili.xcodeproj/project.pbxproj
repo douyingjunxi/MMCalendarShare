@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A54FEA0F1F63B94100A92CF1 /* MMCalendarDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A54FEA0E1F63B94100A92CF1 /* MMCalendarDateModel.m */; };
+		A54FEA521F63E8C900A92CF1 /* right_editbymm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A54FEA4E1F63E8C900A92CF1 /* right_editbymm@2x.png */; };
+		A54FEA531F63E8C900A92CF1 /* right_editbymm@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A54FEA4F1F63E8C900A92CF1 /* right_editbymm@3x.png */; };
+		A54FEA541F63E8CA00A92CF1 /* left_editbymm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A54FEA501F63E8C900A92CF1 /* left_editbymm@2x.png */; };
+		A54FEA551F63E8CA00A92CF1 /* left_editbymm@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A54FEA511F63E8C900A92CF1 /* left_editbymm@3x.png */; };
+		A56B6CFF1F62836D00759052 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A56B6CFE1F62836D00759052 /* main.m */; };
+		A56B6D021F62836D00759052 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A56B6D011F62836D00759052 /* AppDelegate.m */; };
+		A56B6D051F62836D00759052 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56B6D041F62836D00759052 /* ViewController.m */; };
+		A56B6D081F62836D00759052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56B6D061F62836D00759052 /* Main.storyboard */; };
+		A56B6D0A1F62836D00759052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56B6D091F62836D00759052 /* Assets.xcassets */; };
+		A56B6D0D1F62836D00759052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56B6D0B1F62836D00759052 /* LaunchScreen.storyboard */; };
+		A56B6D1D1F6285F700759052 /* MMCalendarMoreSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = A56B6D1C1F6285F700759052 /* MMCalendarMoreSelectView.m */; };
+		A56B6D211F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A56B6D1F1F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.m */; };
+		A56B6D221F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A56B6D201F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A54FEA0D1F63B94100A92CF1 /* MMCalendarDateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCalendarDateModel.h; sourceTree = "<group>"; };
+		A54FEA0E1F63B94100A92CF1 /* MMCalendarDateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCalendarDateModel.m; sourceTree = "<group>"; };
+		A54FEA4E1F63E8C900A92CF1 /* right_editbymm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_editbymm@2x.png"; sourceTree = "<group>"; };
+		A54FEA4F1F63E8C900A92CF1 /* right_editbymm@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_editbymm@3x.png"; sourceTree = "<group>"; };
+		A54FEA501F63E8C900A92CF1 /* left_editbymm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_editbymm@2x.png"; sourceTree = "<group>"; };
+		A54FEA511F63E8C900A92CF1 /* left_editbymm@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_editbymm@3x.png"; sourceTree = "<group>"; };
+		A56B6CFA1F62836D00759052 /* rili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rili.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56B6CFE1F62836D00759052 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A56B6D001F62836D00759052 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A56B6D011F62836D00759052 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A56B6D031F62836D00759052 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A56B6D041F62836D00759052 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A56B6D071F62836D00759052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A56B6D091F62836D00759052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A56B6D0C1F62836D00759052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A56B6D0E1F62836D00759052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A56B6D1B1F6285F700759052 /* MMCalendarMoreSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCalendarMoreSelectView.h; sourceTree = "<group>"; };
+		A56B6D1C1F6285F700759052 /* MMCalendarMoreSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCalendarMoreSelectView.m; sourceTree = "<group>"; };
+		A56B6D1E1F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCalendarMoreSelectCollectionViewCell.h; sourceTree = "<group>"; };
+		A56B6D1F1F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCalendarMoreSelectCollectionViewCell.m; sourceTree = "<group>"; };
+		A56B6D201F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMCalendarMoreSelectCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A56B6CF71F62836D00759052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A54FEA0C1F63B92800A92CF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A54FEA0D1F63B94100A92CF1 /* MMCalendarDateModel.h */,
+				A54FEA0E1F63B94100A92CF1 /* MMCalendarDateModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A56B6CF11F62836D00759052 = {
+			isa = PBXGroup;
+			children = (
+				A56B6CFC1F62836D00759052 /* rili */,
+				A56B6CFB1F62836D00759052 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A56B6CFB1F62836D00759052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A56B6CFA1F62836D00759052 /* rili.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A56B6CFC1F62836D00759052 /* rili */ = {
+			isa = PBXGroup;
+			children = (
+				A56B6D1A1F62859500759052 /* View */,
+				A56B6D001F62836D00759052 /* AppDelegate.h */,
+				A56B6D011F62836D00759052 /* AppDelegate.m */,
+				A56B6D031F62836D00759052 /* ViewController.h */,
+				A56B6D041F62836D00759052 /* ViewController.m */,
+				A56B6D061F62836D00759052 /* Main.storyboard */,
+				A56B6D091F62836D00759052 /* Assets.xcassets */,
+				A56B6D0B1F62836D00759052 /* LaunchScreen.storyboard */,
+				A56B6D0E1F62836D00759052 /* Info.plist */,
+				A56B6CFD1F62836D00759052 /* Supporting Files */,
+			);
+			path = rili;
+			sourceTree = "<group>";
+		};
+		A56B6CFD1F62836D00759052 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A56B6CFE1F62836D00759052 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A56B6D1A1F62859500759052 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A54FEA4E1F63E8C900A92CF1 /* right_editbymm@2x.png */,
+				A54FEA4F1F63E8C900A92CF1 /* right_editbymm@3x.png */,
+				A54FEA501F63E8C900A92CF1 /* left_editbymm@2x.png */,
+				A54FEA511F63E8C900A92CF1 /* left_editbymm@3x.png */,
+				A54FEA0C1F63B92800A92CF1 /* Model */,
+				A56B6D1B1F6285F700759052 /* MMCalendarMoreSelectView.h */,
+				A56B6D1C1F6285F700759052 /* MMCalendarMoreSelectView.m */,
+				A56B6D1E1F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.h */,
+				A56B6D1F1F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.m */,
+				A56B6D201F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A56B6CF91F62836D00759052 /* rili */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A56B6D111F62836D00759052 /* Build configuration list for PBXNativeTarget "rili" */;
+			buildPhases = (
+				A56B6CF61F62836D00759052 /* Sources */,
+				A56B6CF71F62836D00759052 /* Frameworks */,
+				A56B6CF81F62836D00759052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rili;
+			productName = rili;
+			productReference = A56B6CFA1F62836D00759052 /* rili.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A56B6CF21F62836D00759052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = minmin;
+				TargetAttributes = {
+					A56B6CF91F62836D00759052 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A56B6CF51F62836D00759052 /* Build configuration list for PBXProject "rili" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A56B6CF11F62836D00759052;
+			productRefGroup = A56B6CFB1F62836D00759052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A56B6CF91F62836D00759052 /* rili */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A56B6CF81F62836D00759052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56B6D0D1F62836D00759052 /* LaunchScreen.storyboard in Resources */,
+				A54FEA531F63E8C900A92CF1 /* right_editbymm@3x.png in Resources */,
+				A54FEA521F63E8C900A92CF1 /* right_editbymm@2x.png in Resources */,
+				A54FEA541F63E8CA00A92CF1 /* left_editbymm@2x.png in Resources */,
+				A56B6D221F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.xib in Resources */,
+				A56B6D0A1F62836D00759052 /* Assets.xcassets in Resources */,
+				A56B6D081F62836D00759052 /* Main.storyboard in Resources */,
+				A54FEA551F63E8CA00A92CF1 /* left_editbymm@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A56B6CF61F62836D00759052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56B6D211F628B1700759052 /* MMCalendarMoreSelectCollectionViewCell.m in Sources */,
+				A56B6D1D1F6285F700759052 /* MMCalendarMoreSelectView.m in Sources */,
+				A56B6D051F62836D00759052 /* ViewController.m in Sources */,
+				A56B6D021F62836D00759052 /* AppDelegate.m in Sources */,
+				A54FEA0F1F63B94100A92CF1 /* MMCalendarDateModel.m in Sources */,
+				A56B6CFF1F62836D00759052 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A56B6D061F62836D00759052 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A56B6D071F62836D00759052 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A56B6D0B1F62836D00759052 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A56B6D0C1F62836D00759052 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A56B6D0F1F62836D00759052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A56B6D101F62836D00759052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A56B6D121F62836D00759052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = rili/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = minmin.rili;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A56B6D131F62836D00759052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = rili/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = minmin.rili;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A56B6CF51F62836D00759052 /* Build configuration list for PBXProject "rili" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A56B6D0F1F62836D00759052 /* Debug */,
+				A56B6D101F62836D00759052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A56B6D111F62836D00759052 /* Build configuration list for PBXNativeTarget "rili" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A56B6D121F62836D00759052 /* Debug */,
+				A56B6D131F62836D00759052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A56B6CF21F62836D00759052 /* Project object */;
+}
