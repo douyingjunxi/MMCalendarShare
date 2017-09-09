@@ -24,7 +24,6 @@
 
 @property (nonatomic ,strong) UICollectionView *collectionView;//展示的collectionView
 
-@property (nonatomic ,strong) NSArray *weekArr;// 周一到周七显示数据源
 @property (nonatomic ,strong) NSMutableArray *daysWeek;//collectionView数据源
 
 @property (nonatomic ,strong) MMCalendarDateModel *curDayModel;//记录当前时间
@@ -34,6 +33,8 @@
 
 @property (nonatomic ,strong) NSMutableDictionary *selectDateDic;//选择的天数
 @property (nonatomic ,copy) void(^callback)(NSDictionary*);//回调
+
+@property (nonatomic ,assign) CGFloat cellWidth;
 @end
 @implementation MMCalendarMoreSelectView
 #pragma mark - 创建方法
@@ -41,6 +42,7 @@
     
     MMCalendarMoreSelectView *view = [[MMCalendarMoreSelectView alloc] initWithFrame:frame];
     view.callback = callback;
+    
     [view setup];
     return view;
     
@@ -51,9 +53,10 @@
     self.layer.masksToBounds = YES;
     self.layer.cornerRadius = 15.0;
     
-    self.backgroundColor = [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:1.0];
+    self.cellWidth = (kkmScreenWidth - 20) / 7 - 1;
+    self.backgroundColor = [UIColor whiteColor];
     //部分数据初始化
-    _weekArr = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七"];
+    
     _selectDateDic = [NSMutableDictionary dictionary];
     _showDate = [NSDate date];
     
@@ -66,6 +69,21 @@
     [self reloadDate];
 }
 
+-(void)drawRect:(CGRect)rect{
+    NSArray * weekArr = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七"];
+    
+    for (int i = 0 ;i < weekArr.count ;i++) {
+        NSString *str = weekArr[i];
+        
+        CGFloat width = kkmScreenWidth / 7;
+        
+        [str drawInRect:CGRectMake((i + 0.5)* width - 8, kkmBtnHeight + 0.5 * width - 8, width, width) withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16.0],NSForegroundColorAttributeName:[UIColor colorWithRed:0.168 green:0.168 blue:0.168 alpha:1.0]}];
+        
+        
+    }
+
+}
+
 -(void)setUIs{
     
     //根据实际需求设置UI
@@ -75,6 +93,8 @@
     label.font = [UIFont systemFontOfSize:24];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor colorWithRed:0.168 green:0.168 blue:0.168 alpha:1.0];
+    label.backgroundColor = [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:1.0];
+        
     [self addSubview:label];
         
     label;
@@ -174,7 +194,8 @@
 -(void)setCollView{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     
-    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, kkmBtnHeight + 1, kkmScreenWidth, kkmScreenHeight) collectionViewLayout:layout];
+    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, kkmBtnHeight  + _cellWidth, kkmScreenWidth, kkmScreenHeight) collectionViewLayout:layout];
+    
     _collectionView.backgroundColor = [UIColor whiteColor];
     _collectionView.scrollEnabled = NO;
     
@@ -186,7 +207,7 @@
     [self addSubview:_collectionView];
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 7 * 7;
+    return 6 * 7;
 }
 
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
@@ -194,21 +215,21 @@
 }
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake((kkmScreenWidth - 20) / 7 - 1, (kkmScreenWidth - 20) / 7 - 1);
+    return CGSizeMake(_cellWidth, _cellWidth);
 }
 
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     MMCalendarMoreSelectCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MMCalendarMoreSelectCollectionViewCellID forIndexPath:indexPath];
-    if (indexPath.item < 7) {
-        cell.showLabel.text = _weekArr[indexPath.row];
-        cell.showLabel.textColor = [UIColor colorWithRed:0.168 green:0.168 blue:0.168 alpha:1.0];
-        
-        cell.showNowView.hidden = YES;
-        cell.blueView.hidden = YES;
-        
-    }else{
-        MMCalendarDateModel *model = self.daysWeek[indexPath.row - 7];
+//    if (indexPath.item < 7) {
+//        cell.showLabel.text = _weekArr[indexPath.row];
+//        cell.showLabel.textColor = [UIColor colorWithRed:0.168 green:0.168 blue:0.168 alpha:1.0];
+//        
+//        cell.showNowView.hidden = YES;
+//        cell.blueView.hidden = YES;
+//        
+//    }else{
+        MMCalendarDateModel *model = self.daysWeek[indexPath.row];
         cell.showLabel.text = [NSString stringWithFormat:@"%ld",model.day];
         MMCalendarCompareResult result = [MMCalendarDateModel mmCompareTwoDay:_curDayModel andOtherDay:model];
         
@@ -232,7 +253,7 @@
             cell.blueView.hidden = YES;
         }
         
-    }
+//    }
     
     return cell;
 }
@@ -246,11 +267,11 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    if (indexPath.row < 7 ) {
-        return;
-    }
-    
-    MMCalendarDateModel *model = self.daysWeek[indexPath.row - 7];
+//    if (indexPath.row < 7 ) {
+//        return;
+//    }
+//    
+    MMCalendarDateModel *model = self.daysWeek[indexPath.row];
     
     if (model.month != _showDayModel.month || [MMCalendarDateModel mmCompareTwoDay:_curDayModel andOtherDay:model] == MMCalendarCompareResultBefore) {
         return;
